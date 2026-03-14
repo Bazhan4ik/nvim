@@ -1,9 +1,6 @@
 return {
     cmd = { "lua-language-server" },
     capabilities = require("cmp_nvim_lsp").default_capabilities(),
-	diagnostics = {
-		globals = { "vim", "require" },
-	},
     settings = {
         Lua = {
             runtime = {
@@ -14,7 +11,7 @@ return {
                 checkThirdParty = false,
             },
             diagnostics = {
-                globals = { "vim" },
+                globals = { "vim", "require" },
             },
         },
     },
